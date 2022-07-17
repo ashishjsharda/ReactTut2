@@ -5,6 +5,7 @@ function App() {
   let isMorning=(new Date()).getHours()<12;
   let greetingElement=isMorning ? <h3>Good Morning </h3> :<h3> Good Evening  </h3>
   let adjective='cool';
+  let ahref='https://reactjs.org'
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +16,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href={ahref}
           target="_blank"
           rel="noopener noreferrer"
         >
